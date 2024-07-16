@@ -1,0 +1,21 @@
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./pagina-inicial/style.css');
+
+:root {
+    --fuente-principal: "Chakra Petch", sans-serif;
+    --morado-claro: #ede9fd;
+    --fondo-principal: #5300C8;
+    --Azul-form: #03318C;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+body{
+    font-family: var(--fuente-principal);
+    background-color: var(--morado-claro);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+  }
+

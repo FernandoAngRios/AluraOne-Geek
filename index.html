@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+      integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/pagina-inicial/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./img/AluraGeekBlanco.png" alt="logo AluraGeek" >
+    </header>
+    <main>
+        <section class="productos">
+            <h1>MIS PRODUCTOS</h1>
+            <ul class="productos__principal" id="lista-productos"></ul>
+        </section>
+    
+        <section class="formulario">
+            <form class="formulario__principal" id="formulario">
+                <h1>AGREGAR PRODUCTOS</h1>
+                
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="name-Productos">Nombre del Producto:</label>
+                    <input class="campo__completo" type="text" minlength="3" name="name-Productos" id="name-Productos" placeholder="Nombre..." required>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+                
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="precio-Productos">Precio del Producto:</label>
+                    <input class="campo__completo" type="number" name="precio-Productos" id="precio-Productos" placeholder="Precio..." required>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+    
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="url-Productos">Url de la imagen del Producto:</label>
+                    <input class="campo__completo" type="text" name="url-Productos" id="url-Productos" placeholder="https://www.example.com..." required>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+                <div class="formulario__botones">
+                    <input type="submit" class="formulario__boton enviar" value="Enviar">
+                    <input type="reset" class="formulario__boton limpiar" value="Limpiar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img src="./img/AluraGeekBlanco.png" alt="logo AluraGeek" ><br>
+        <p>Desarrollado por: <strong>Luis Fernando Anguiano Rios</strong></p><br>
+        <p>Alura LATAM 2024</p>
+    </footer>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/mostrarProducto.js" type="module"></script>
+</body>
+</html>

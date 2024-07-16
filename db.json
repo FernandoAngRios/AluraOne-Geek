@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Producto 1",
+    "precio": "$ 11.50",
+    "url": "./img/muñeco.png"
+  },
+  {
+    "id": 2,
+    "name": "Producto 2",
+    "precio": "$ 12.50",
+    "url": "./img/videojuego.png"
+  },
+  {
+    "id": 3,
+    "name": "Producto 3",
+    "precio": "$ 13.50",
+    "url": "./img/muñeco.png"
+  },
+  {
+    "id": 4,
+    "name": "Producto 4",
+    "precio": "$ 14.50",
+    "url": "./img/videojuego.png"
+  }
+]
